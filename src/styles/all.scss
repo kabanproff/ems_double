@@ -1,1 +1,6 @@
-@import 'reboot.scss';
+@import 'core/variables';
+@import 'core/reboot.scss';
+@import 'core/container.scss';
+@import 'core/typography.scss';
+
+@import 'banner.scss';

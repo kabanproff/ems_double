@@ -1,0 +1,170 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/all.scss ***!
+  \**************************************************************************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1;
+  color: #323232;
+  background-color: #FFFFFF;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 1840px;
+  margin: 36px auto;
+}
+@media (max-width: 1849.98px) {
+  .container {
+    width: 1360px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .container {
+    width: 992px;
+  }
+}
+@media (max-width: 1079.98px) {
+  .container {
+    width: 720px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    margin: 0 10px;
+    width: auto;
+  }
+}
+
+@font-face {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Manrope");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+  line-height: 1.6;
+  margin: 0 0 21px;
+}
+
+.banner {
+  background-color: #F0F4FC;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner__box {
+  display: flex;
+  align-items: center;
+  padding: 51px 73px;
+}
+
+.banner__desk {
+  max-width: 48%;
+}
+
+.banner__title {
+  color: #1F4284;
+}
+
+.banner__text {
+  font-weight: 400;
+  line-height: 27px;
+}
