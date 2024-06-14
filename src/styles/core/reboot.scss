@@ -59,6 +59,7 @@ overflow: hidden;
 
 img {
   max-width: 100%;
+  line-height: 1;
 }
 
 ol, ul {
@@ -66,7 +67,7 @@ ol, ul {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.6;
 }
 
 ol, ul {
@@ -86,4 +87,14 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  font-weight: 500;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }

@@ -14,19 +14,30 @@
     <div class="banner__box">
       <div class="banner__desk">
         <div class="h1 banner__title">Демо-версия</div>
-        <div class="banner__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить </div>
-        <div class="banner__btn">
-          Попробовать бесплатно
-          <svg class="banner__btn-arrow" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="36" height="36" rx="18" fill="white"/>
-            <path d="M13 13H23V23" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M13 23L23 13" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="banner__text">За&nbsp;18&nbsp;лет деятельности было реализовано более 500&nbsp;крупных, а&nbsp;так&nbsp;же,
+          не&nbsp;менее 2500 средних и&nbsp;малых проектов. Используя знания и&nbsp;накопленный опыт мы&nbsp;можем
+          предложить
         </div>
+        <button class="banner__btn btn btn-primary">
+          Попробовать бесплатно
+          <span class="banner__btn-arrow">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="18" fill="white"/>
+              <path d="M13 13H23V23" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 23L23 13" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div class="banner__image">
-      <img src="image/image.jpg" alt="Banner Image">
+      <picture>
+        <source srcset="image/image.jpg" media="(min-width: 1440px)">
+        <source srcset="image/image-1440.jpg" media="(min-width: 768px)">
+        <source srcset="image/image-768.jpg" media="(min-width: 576px)">
+        <img src="image/image-375.jpg" alt="Banner Image">
+      </picture>
     </div>
   </div>
 </div>

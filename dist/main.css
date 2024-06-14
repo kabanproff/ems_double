@@ -51,10 +51,12 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100vh;
+  overflow: hidden;
 }
 
 img {
   max-width: 100%;
+  line-height: 1;
 }
 
 ol, ul {
@@ -62,7 +64,7 @@ ol, ul {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.6;
 }
 
 ol, ul {
@@ -82,6 +84,16 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  font-weight: 500;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .container {
@@ -140,24 +152,59 @@ h1,
 .h1 {
   font-size: 30px;
   line-height: 1.6;
-  margin: 0 0 21px;
+  margin: 0 0 18px;
+}
+@media (max-width: 1849.98px) {
+  h1,
+  .h1 {
+    font-size: 26px;
+  }
+}
+
+.btn {
+  border-radius: 60px;
+  padding: 12px 12px 12px 24px;
+  transition: all 150ms ease-in-out;
+}
+
+.btn-primary {
+  background: #244C98;
+  border-color: #244C98;
+  color: #FFFFFF;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: #FFFFFF;
+  border-color: #244C98;
+  color: #244C98;
 }
 
 .banner {
   background-color: #F0F4FC;
-  display: flex;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  gap: 19px;
 }
 
 .banner__box {
+  width: 50%;
   display: flex;
   align-items: center;
-  padding: 51px 73px;
+  padding: 50px 72px;
+}
+@media (max-width: 1079.98px) {
+  .banner__box {
+    width: 60%;
+  }
 }
 
 .banner__desk {
-  max-width: 48%;
+  max-width: 66%;
+}
+@media (max-width: 1849.98px) {
+  .banner__desk {
+    max-width: 100%;
+  }
 }
 
 .banner__title {
@@ -165,6 +212,37 @@ h1,
 }
 
 .banner__text {
-  font-weight: 400;
-  line-height: 27px;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.banner__btn {
+  display: flex;
+  align-items: center;
+}
+
+.banner__btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 48px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.banner__image {
+  width: 50%;
+}
+@media (max-width: 1399.98px) {
+  .banner__image {
+    width: 40%;
+  }
+}
+
+.banner__image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }

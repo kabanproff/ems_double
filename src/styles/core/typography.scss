@@ -29,4 +29,27 @@ h1,
   line-height: $line-height-h1;
   margin: $head-margin-h1;
 
+  @media (max-width: $screen-xl-max) {
+    font-size: calc($font-size-h1 - 4px);
+  }
+
+}
+
+.btn {
+  border-radius: 60px;
+  padding: 12px 12px 12px 24px;
+  transition: all 150ms ease-in-out;
+}
+
+.btn-primary {
+  background: $brand-primary;
+  border-color: $brand-primary;
+  color: $brand-white;
+
+  &:hover,
+  &:focus {
+    background: $brand-white;
+    border-color: $brand-primary;
+    color: $brand-primary;
+  }
 }
