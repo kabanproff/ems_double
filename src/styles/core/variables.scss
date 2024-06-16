@@ -33,7 +33,6 @@ $brand-white:                       #FFFFFF;
 $brand-black:                       #000000;
 $brand-black-1:                     #323232;
 $brand-black-2:                     #727272;
-;
 
 $brand-gray-1:                      #EBF0FA;
 $brand-gray-2:                      #F0F4FC;
@@ -47,7 +46,8 @@ $body-bg-color:                     $brand-white;
 //================================ Typography ====================================//
 //================================================================================//
 $font-family-base:                  'Manrope', sans-serif;
-$font-size-base:                    18px; // Assumes the browser default, typically `14px`
+$font-size-base:                    18px;
+$font-size-base-md:                 15px;
 $line-height-base:                  1;
 
 //================================================================================//

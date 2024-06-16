@@ -1,6 +1,6 @@
 .banner {
   background-color: $brand-gray-2;
-  border-radius: 10px;
+  border-radius: $border-radius-base;
   overflow: hidden;
   display: flex;
   gap: 19px;
@@ -20,12 +20,13 @@
   align-items: center;
   padding: 50px 72px;
 
-  //@media (max-width: $screen-lg-max) {
-  //  width: 60%;
-  //}
-
   @media (max-width: $screen-md-max) {
     width: 100%;
+    padding: 25px 24px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 24px 24px 18px;
   }
 }
 
@@ -44,11 +45,26 @@
 .banner__text {
   font-size: 17px;
   margin-bottom: 35px;
+
+  @media (max-width: $screen-md-max) {
+    font-size: 15px;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 13px;
+    margin-bottom: 19px;
+  }
 }
 
 .banner__btn {
   display: flex;
   align-items: center;
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .banner__btn-arrow {
@@ -60,14 +76,20 @@
   height: 44px;
   border-radius: 50%;
   background-color: $brand-white;
+
+  @media (max-width: $screen-md-max) {
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-left: 5px;
+  }
 }
 
 .banner__image {
   width: 50%;
-
-  //@media (max-width: $screen-lg-max) {
-  //  width: 40%;
-  //}
 
   @media (max-width: $screen-md-max) {
     width: 100%;
@@ -78,4 +100,8 @@
   display: block;
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: $screen-sm-max) {
+    width: 100%;
+  }
 }

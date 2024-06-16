@@ -38,23 +38,21 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  margin: 0; // 1
+  margin: 0;
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: normal;
   line-height: $line-height-base;
   color: $text-color;
-  background-color: $body-bg-color; // 2
-  text-align: left; // 3
-  -webkit-text-size-adjust: 100%; // 4
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 5
+  background-color: $body-bg-color;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100vh;
-overflow: hidden;
 
-  //@media (max-width: $screen-xs-max) {
-  //  font-size: $font-size-base-xs;
-  //  line-height: $line-height-base-xs;
-  //}
+  @media (max-width: $screen-md-max) {
+    font-size: $font-size-base-md;
+  }
 }
 
 img {

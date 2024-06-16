@@ -33,12 +33,30 @@ h1,
     font-size: calc($font-size-h1 - 4px);
   }
 
+  @media (max-width: $screen-md-max) {
+    font-size: calc($font-size-h1 - 10px);
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: calc($font-size-h1 - 13px);
+    margin-bottom: 14px;
+  }
+
 }
 
 .btn {
   border-radius: 60px;
   padding: 12px 12px 12px 24px;
   transition: all 150ms ease-in-out;
+
+  @media (max-width: $screen-md-max) {
+    padding: 10px 10px 10px 18px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
 }
 
 .btn-primary {
