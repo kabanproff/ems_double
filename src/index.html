@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>Webpack App</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="banner">
+    <div class="banner__box">
+      <div class="banner__desk">
+        <div class="h1 banner__title">Демо-версия</div>
+        <div class="banner__text">За&nbsp;18&nbsp;лет деятельности было реализовано более 500&nbsp;крупных, а&nbsp;так&nbsp;же,
+          не&nbsp;менее 2500 средних и&nbsp;малых проектов. Используя знания и&nbsp;накопленный опыт мы&nbsp;можем
+          предложить
+        </div>
+        <button class="banner__btn btn btn-primary">
+          Попробовать бесплатно
+          <span class="banner__btn-arrow">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="18" fill="white"/>
+              <path d="M13 13H23V23" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 23L23 13" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="banner__image">
+      <picture>
+        <source srcset="/images/image-375.jpg" media="(max-width: 768px)">
+        <source srcset="/images/image-768.jpg" media="(max-width: 992px)">
+        <source srcset="/images/image-1440.jpg" media="(max-width: 1860px)">
+        <img src="/images/image.jpg" alt="Banner Image">
+      </picture>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

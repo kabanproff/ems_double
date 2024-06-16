@@ -11,9 +11,9 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 
 const config = {
-  entry: './src/main.js',
+  entry: './main.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../'),
     // assetModuleFilename: 'images/[hash][ext][query]'
   },
   devServer: {
